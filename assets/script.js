@@ -9,11 +9,13 @@ $( ".time-block" ).each(function( index,timeBlock ) {
   var textarea = $(timeBlock).children('textarea')
   var button = $(timeBlock).children('button')
 //grab text from local storage
+localStorage.getItem('textarea')
 let timeBlockTime = $(timeBlock).attr('id').split('-')[1]
 console.log(timeBlockTime)
   button.on('click', function(event){
 var thisBtn = $(event.target)
 //save text to local storage
+
 
   })
 });
